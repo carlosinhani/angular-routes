@@ -1,1 +1,15 @@
-<h1>Ou Sou Rodrigo</h1>
+<nav>
+  <div class="nav-wrapper">
+    <a routerLink="" class="brand-logo">Rotas Ng11</a>
+    <ul id="nav-mobile" class="right hide-on-med-and-down">
+      <li routerLinkActive="active"><a routerLink="login">Login</a></li>
+      <li routerLinkActive="active"><a routerLink="cursos">Cursos</a></li>
+      <li routerLinkActive="active"><a [routerLink]="['curso', idCurso.value]">Cursos com Id</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="container">
+    <p>Entre com id co curso</p>
+    <input #idCurso>
+  <router-outlet></router-outlet>
+</div>
