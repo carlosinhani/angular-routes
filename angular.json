@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "rotas-Agular"
+    }
+  },
+  "defaultProject": "rotas-Agular",
+  "cli": {
+    "analytics": "c3738407-3948-419f-bf6d-1fa54a4ed12e"
+  }
 }
