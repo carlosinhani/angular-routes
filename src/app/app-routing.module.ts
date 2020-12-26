@@ -1,4 +1,4 @@
-import { ModuleWithProviders, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 import { CursosComponent } from './cursos/cursos.component';
@@ -15,7 +15,7 @@ const appRoutes: Routes = [
       { path: '', component: HomeComponent }
 ];
 
-// export const routing: ModuleWithProviders = RouterModule.forRoot(AppRoutingModule);
+
 
 @NgModule({
   imports: [RouterModule.forRoot(appRoutes)],
