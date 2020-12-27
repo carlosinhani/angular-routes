@@ -9,7 +9,14 @@ import { LoginComponent } from './login/login.component';
 // import { CursoNaoEncontradoComponent } from './cursos/curso-nao-encontrado/curso-nao-encontrado.component';
 
 const appRoutes: Routes = [
+      { path: 'cursos',
+        loadChildren: () => import('./cursos/cursos.module').then(m => m.CursosModule)},
+
+      { path: 'alunos',
+        loadChildren: () => import('./alunos/alunos.module').then(m => m.AlunosModule)},
+
       { path: 'login', component: LoginComponent},
+
       { path: '', component: HomeComponent },
 
 
