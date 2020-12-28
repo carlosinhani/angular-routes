@@ -5,9 +5,9 @@ import { Injectable } from '@angular/core';
 export class AlunosService {
 
    alunos: any [] = [
-    {id: 1, nome: 'Aluno 01', email: 'aluno01@email.com'},
-    {id: 2, nome: 'Aluno 02', email: 'aluno02@email.com'},
-    {id: 3, nome: 'Aluno 03', email: 'aluno03@email.com'}
+    {id: 1, nome: 'Priscila', email: 'aluno01@email.com'},
+    {id: 2, nome: 'Beatriz', email: 'aluno02@email.com'},
+    {id: 3, nome: 'Dayne', email: 'aluno03@email.com'}
   ];
 
   getAlunos(){
