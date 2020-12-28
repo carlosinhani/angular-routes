@@ -14,7 +14,7 @@ export class AuthService {
 
   fazerLogin(usuario: Usuario){
 
-    if (usuario.nome === 'usuario@email.com' &&
+    if (usuario.nome === 'inhani@gmail.com' &&
         usuario.senha === '123456') {
 
           this.usuarioAutenticado = true;
@@ -28,5 +28,9 @@ export class AuthService {
 
       this.mostrarMenuEmitter.emit(false);
     }
+  }
+
+  usuarioEstaAutenticado(){
+    return this.usuarioAutenticado;
   }
 }
