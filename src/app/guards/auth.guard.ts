@@ -33,7 +33,7 @@ export class AuthGuard implements CanActivate, CanLoad {
    private verificarAcesso(){
     if (this.authService.usuarioEstaAutenticado()){
       return true;
-    }
+    } 
 
       this.router.navigate(['/login']);
 
